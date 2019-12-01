@@ -3,15 +3,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/home/lukaswilkeer/.nvim/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/home/lukaswilkeer/.nvim')
-  call dein#begin('/home/lukaswilkeer/.nvim')
+if dein#load_state('~/.cache/dein')
+  call dein#begin('~/.cache/dein')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/home/lukaswilkeer/.nvim/repos/github.com/Shougo/dein.vim')
+  call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
 
   " Plugins
   call dein#add('Shougo/neosnippet.vim')
@@ -30,6 +30,8 @@ if dein#load_state('/home/lukaswilkeer/.nvim')
   call dein#add('ctrlpvim/ctrlp.vim')
   call dein#add('airblade/vim-gitgutter')
   call dein#add('NLKNguyen/papercolor-theme')
+  call dein#add('wakatime/vim-wakatime')
+  call dein#add('editorconfig/editorconfig-vim')
   " call dein#add('airodactyl/neovim-ranger')
 
   " Themes
@@ -84,6 +86,7 @@ syntax enable
   ca w!! w !sudo tee "%" " save as sudo
   map <F1> :tabp "tab map
   map <F2> :tabn "tab map
+  map <F3> :NERDTreeToggle
  
 " If you want to install not installed plugins on startup.
 if dein#check_install()
