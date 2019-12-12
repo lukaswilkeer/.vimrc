@@ -32,6 +32,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('NLKNguyen/papercolor-theme')
   call dein#add('wakatime/vim-wakatime')
   call dein#add('editorconfig/editorconfig-vim')
+  call dein#add('ycm-core/YouCompleteMe')
   " call dein#add('airodactyl/neovim-ranger')
 
   " Themes
